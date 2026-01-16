@@ -1,0 +1,36 @@
+body { margin: 0; overflow: hidden; background-color: #050505; font-family: 'Inter', sans-serif; }
+
+#ui-layer {
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+    color: white; pointer-events: none;
+    display: flex; flex-direction: column; justify-content: space-between;
+    padding: 30px; box-sizing: border-box;
+}
+
+/* Header & Footer */
+header, footer { pointer-events: auto; }
+header h1 { margin: 0; font-size: 2rem; color: #00ffcc; text-shadow: 0 0 10px rgba(0,255,204,0.5); }
+.contact-links a {
+    color: #fff; margin-right: 20px; text-decoration: none; 
+    font-size: 0.9rem; border-bottom: 1px solid #00ffcc; transition: 0.3s;
+}
+.contact-links a:hover { color: #00ffcc; }
+
+/* Project Card */
+#project-card {
+    position: absolute; top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px; background: rgba(20, 20, 20, 0.9);
+    padding: 25px; border-radius: 15px; border: 1px solid #00ffcc;
+    backdrop-filter: blur(10px); pointer-events: auto;
+    transition: all 0.4s ease;
+}
+
+#project-card.hidden { display: none; opacity: 0; }
+#close-btn { 
+    float: right; background: none; border: none; color: white; 
+    font-size: 1.5rem; cursor: pointer; 
+}
+#project-link {
+    display: inline-block; margin-top: 15px; color: #00ffcc; text-decoration: none; font-weight: bold;
+}
