@@ -107,3 +107,61 @@ footer {
     border-bottom: 2px solid #00ffcc; 
     transform: translateY(-3px); /* Nhảy nhẹ lên khi hover */
 }
+/* --- RESPONSIVE CHO ĐIỆN THOẠI & TABLET --- */
+@media (max-width: 768px) {
+    /* Thu nhỏ tiêu đề chính */
+    header h1 {
+        font-size: 1.8rem;
+        letter-spacing: 1px;
+    }
+
+    /* Thu nhỏ subtitle */
+    .subtitle {
+        font-size: 0.9rem;
+        padding: 0 10px;
+    }
+
+    /* Quan trọng: Cho phép các link liên hệ tự động xuống dòng */
+    .contact-links {
+        gap: 15px;
+        flex-wrap: wrap; /* Tự động xuống dòng khi hết chỗ */
+        justify-content: center;
+        padding: 0 10px;
+    }
+
+    .contact-links a {
+        font-size: 0.85rem; /* Thu nhỏ chữ một chút */
+    }
+
+    .contact-links a i {
+        font-size: 1rem;
+    }
+
+    /* Điều chỉnh khung hiển thị dự án cho màn hình nhỏ */
+    #project-card {
+        width: 85%; /* Chiếm 85% chiều ngang màn hình */
+        padding: 20px;
+    }
+
+    #project-title {
+        font-size: 1.3rem;
+    }
+
+    #project-desc {
+        font-size: 0.9rem;
+    }
+
+    /* Đẩy UI layer sát biên hơn để tối ưu không gian */
+    #ui-layer {
+        padding: 20px 10px;
+    }
+}
+
+/* Thêm hiệu ứng cho màn hình siêu nhỏ (iPhone SE, v.v.) */
+@media (max-width: 400px) {
+    .contact-links {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Chia làm 2 cột cho gọn */
+        gap: 10px;
+    }
+}
