@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Analyst Portfolio 3D</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="ui-layer">
+        <header>
+            <h1>NGUYỄN QUỐC TUẤN </h1>
+            <p class="subtitle">Data Analyst | Chuyên gia phân tích dữ liệu</p>
+        </header>
+
+        <div id="project-card" class="hidden">
+            <button id="close-btn">&times;</button>
+            <h2 id="project-title">Tên dự án</h2>
+            <p id="project-desc">Mô tả chi tiết về các bước xử lý dữ liệu, công cụ sử dụng và kết quả đạt được.</p>
+            <a href="#" id="project-link" target="_blank">Xem chi tiết dự án</a>
+        </div>
+
+        <footer>
+            <div class="contact-links">
+                <a href="mailto:email@example.com">Email</a>
+                <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+                <a href="https://github.com/yourgithub" target="_blank">GitHub</a>
+            </div>
+        </footer>
+    </div>
+
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+                "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+            }
+        }
+    </script>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
